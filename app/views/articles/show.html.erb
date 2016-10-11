@@ -1,0 +1,8 @@
+<div class="jumbotron">
+<h2><%= @article.title %></h2>
+<hr>
+<p><%= Kramdown::Document.new(@article.content).to_html.html_safe %></p>
+</div>
+
+<a class="btn btn-default" href="/articles/">Read more articles</a>
+
